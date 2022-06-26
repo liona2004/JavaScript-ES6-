@@ -12,3 +12,5 @@ const myFunc = () => {
   const myVar = "value";
   return myVar;
 }
+// ИЛИ
+const myFunc = () => "value";
