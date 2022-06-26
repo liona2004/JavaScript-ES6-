@@ -3,10 +3,18 @@
 В JavaScript есть два типа области видимости — глобальная и локальная (global scope и function scope)
 переменная, созданная с помощью оператора let, доступна внутри блока, в котором она была создана и в любом вложенном блоке. 
 «блок» = всё что вложено между фигурными скобками {}, как в цикле for или условии if
+
 const ведёт себя как let
+objects (including arrays and functions) assigned to a variable using const are still mutable!!!!
 */
 
 for(let i = 0; i < 5; i++) {}
 //Переменная i доступна только внутри цикла
 //Попытка использовать её приведёт к ошибке
 console.log(i);
+
+
+const s = [5, 6, 7];
+s = [1, 2, 3];
+s[2] = 45;
+console.log(s);
