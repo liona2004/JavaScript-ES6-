@@ -12,5 +12,5 @@ const myFunc = () => {
   const myVar = "value";
   return myVar;
 }
-// ИЛИ
+// ИЛИ This code will still return the string value by default.
 const myFunc = () => "value";
