@@ -1,0 +1,50 @@
+/*
+spread-оператор быстро дает вам доступ к «материалу», из которого состоят такие итерируемые объекты. 
+cкобки оператора должны совпадать со скобками итерируемого объекта
+
+*/
+const foo = [
+  'hello',
+  'bonjour',
+  'konnichiwa'
+];
+const bar = [...foo]; // the three dots "..." are the spread operator syntax!
+
+console.log(bar);
+// ['hello', 'bonjour', 'konnichiwa'];
+
+const foo = {
+  english: 'hello',
+  french: 'bonjour',
+  japanese: 'konnichiwa'
+};
+const bar = {...foo};
+
+console.log(bar);
+// { english: 'hello', french: 'bonjour', japanese: 'konnichiwa' }
+
+
+// слияние объектов 
+const foo = ['hello', 'bonjour', 'konnichiwa'];
+const bar = ['gutentag', 'hello-ey'];
+const baz = [...foo, ...bar];
+
+console.log(baz);
+// ['hello', 'bonjour', 'konnichiwa', 'gutentag', 'hello-ey']
+
+const foo = ['hello', 'bonjour', 'konnichiwa'];
+const bar = [...foo, 'gutentag', 'hello-ey'];
+
+console.log(bar);
+// ['hello', 'bonjour', 'konnichiwa', 'gutentag', 'hello-ey']
+
+
+const cube = [12, 30, 14];
+
+function calcVolume(width, height, depth) {
+  return width * height * depth;
+};
+
+calcVolume(12, 30, 14);         // basic
+calcVolume.apply(null, cube);   // using "apply"
+calcVolume(...cube);          // using "spread operator"
