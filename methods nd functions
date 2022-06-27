@@ -23,3 +23,11 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 const greeting = (name = "Anonymous") => "Hello " + name;
 console.log(greeting("John"));
 console.log(greeting());
+
+
+/*
+Метод Math.max() возвращает наибольшее из нуля или более чисел.
+*/
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr);
+maximus would have a value of 89.
