@@ -16,3 +16,9 @@ let arr = ["Ilya", "Kantor"]
 let [firstName, surname] = arr;
 alert(firstName); // Ilya
 alert(surname);  // Kantor
+
+
+const user = { name: 'John Doe', age: 34 };
+Here's how you can give new variable names in the assignment:
+
+const { name: userName, age: userAge } = user;
