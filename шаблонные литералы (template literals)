@@ -1,0 +1,9 @@
+Шаблонные литералы, с другой стороны, объявляют с использованием обратных кавычек (` `) Template literals allow you to create multi-line strings 
+and to use string interpolation features to create strings.
+The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore
+
+function makeList(arr) {
+  const failureItems = [];
+  for ( var i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
