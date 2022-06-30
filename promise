@@ -1,0 +1,4 @@
+Promise – это специальный объект, который содержит своё состояние. 
+Вначале pending («ожидание»), затем – одно из: fulfilled («выполнено успешно») или rejected («выполнено с ошибкой»).
+
+const makeServerRequest = new Promise((resolve, reject) => {});
