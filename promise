@@ -2,3 +2,13 @@ Promise – это специальный объект, который соде�
 Вначале pending («ожидание»), затем – одно из: fulfilled («выполнено успешно») или rejected («выполнено с ошибкой»).
 
 const makeServerRequest = new Promise((resolve, reject) => {});
+
+
+resolve is used when you want your promise to succeed, and reject is used when you want it to fail
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
