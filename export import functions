@@ -1,0 +1,28 @@
+When you export a variable or function, you can import it in another file and use it without having to rewrite the code
+
+
+export const add = (x, y) => {
+  return x + y;
+}
+
+ИЛИ
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+
+export { add, subtract };
+
+
+
+
+import { add } from './math_functions.js';
+The ./ tells the import to look for the math_functions.js file in the same folder as the current file. 
+
+
+ you have a file and you wish to import all of its contents into the current file
+ import * as myMathModule from "./math_functions.js";
+ The above import statement will create an object called myMathModule. This is just a variable name, you can name it anything.
+ The object will contain all of the exports from math_functions.js in it
